@@ -22,6 +22,10 @@
 
 <br/>
 
+[![Download APK](https://img.shields.io/badge/Download-NotiForwarder.apk-3DDC84?style=for-the-badge&logo=android)](https://drive.google.com/file/d/1iXbNoMeuLRaV2z6zNYBzlq407K7OYM5Z/view?usp=drive_link)
+
+<br/>
+
 [💬 WhatsApp](https://wa.me/6285888199659) **·** [✈️ Telegram](https://t.me/ar4kiara)
 
 </div>
