@@ -6,6 +6,10 @@
 
 <br/>
 
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1500&color=3DDC84&center=true&vCenter=true&width=440&lines=Notif+DANA+%2F+OVO+%2F+GoPay+%E2%86%92+App+%E2%86%92+API+kamu;Satu+app.+Satu+endpoint.+Selesai." alt="Typing animation" />
+
+<br/>
+
 [![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
 [![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org)
 [![Material 3](https://img.shields.io/badge/Material%20Design%203-757575?style=for-the-badge&logo=material-design)](https://m3.material.io)
@@ -14,11 +18,7 @@
 
 <br/>
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  📱 HP dapat notif DANA/OVO/GoPay  →  App kirim  →  🌐 API kamu  │
-└─────────────────────────────────────────────────────────────────┘
-```
+**📱 HP** · notif DANA / OVO / GoPay · **App** kirim · **🌐 API kamu**
 
 <br/>
 
@@ -87,13 +87,14 @@ Backend kamu cukup sediakan **3 endpoint**:
 
 ```js
 global.API_URL = 'https://dabis-api.onrender.com';   // base URL (tanpa /payment_listener)
-global.unique_code_min = 1;
-global.unique_code_max = 99;
+global.unique_code_min = 1;   // batas bawah kode unik (boleh berapa saja, mis. 1, 10, 100)
+global.unique_code_max = 99;   // batas atas kode unik (boleh berapa saja, mis. 99, 999, 500)
 global.unique_code_mode = 'minus';   // minus = bayar lebih sedikit | plus = bayar lebih banyak
 ```
 
 - **API_URL** → base URL API. Di app isi lengkap: `https://dabis-api.onrender.com/payment_listener`
 - **Secret** → isi **ar4kiara** (sama di backend dan di app)
+- **unique_code_min / unique_code_max** → range kode unik bebas (tidak harus 1–99). Contoh: 1–99, 10–500, 100–999. Yang penting min &lt; max.
 
 ### Kode unik: Minus vs Plus
 
